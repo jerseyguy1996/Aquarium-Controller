@@ -152,6 +152,24 @@
 <hole x="-5.33" y="0.76" drill="3.4"/>
 <hole x="5.33" y="0.76" drill="3.4"/>
 </package>
+<package name="OLED128X64">
+<wire x1="-19" y1="-14" x2="-19" y2="14" width="0.127" layer="21"/>
+<wire x1="-19" y1="14" x2="19" y2="14" width="0.127" layer="21"/>
+<wire x1="19" y1="14" x2="19" y2="-14" width="0.127" layer="21"/>
+<wire x1="19" y1="-14" x2="-19" y2="-14" width="0.127" layer="21"/>
+<wire x1="-13.25" y1="-11" x2="-13.25" y2="8" width="0.127" layer="21"/>
+<wire x1="-13.25" y1="8" x2="13.25" y2="8" width="0.127" layer="21"/>
+<wire x1="13.25" y1="8" x2="13.25" y2="-11" width="0.127" layer="21"/>
+<wire x1="13.25" y1="-11" x2="-13.25" y2="-11" width="0.127" layer="21"/>
+<pad name="3.3V" x="3.81" y="11.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="CLK" x="-6.35" y="11.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="CS" x="1.27" y="11.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="DATA" x="-8.89" y="11.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="DC" x="-3.81" y="11.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="GND" x="8.89" y="11.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="RST" x="-1.27" y="11.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="VIN" x="6.35" y="11.08" drill="1.016" shape="long" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="5PIN">
@@ -183,6 +201,20 @@
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <pin name="P$1" x="-10.16" y="2.54" length="middle"/>
 <pin name="P$2" x="-10.16" y="0" length="middle"/>
+</symbol>
+<symbol name="OLED128X64">
+<wire x1="-10.16" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="-15.24" y="5.08" length="middle"/>
+<pin name="VIN" x="-15.24" y="2.54" length="middle"/>
+<pin name="3.3V" x="-15.24" y="0" length="middle"/>
+<pin name="CS" x="-15.24" y="-2.54" length="middle"/>
+<pin name="RST" x="-15.24" y="-5.08" length="middle"/>
+<pin name="DC" x="-15.24" y="-7.62" length="middle"/>
+<pin name="CLK" x="-15.24" y="-10.16" length="middle"/>
+<pin name="DATA" x="-15.24" y="-12.7" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -238,6 +270,28 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="OLED128X64">
+<gates>
+<gate name="G$1" symbol="OLED128X64" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="OLED128X64">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="DC" pad="DC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -266,6 +320,7 @@
 <part name="U$9" library="Saleem_lib" deviceset="2PIN" device=""/>
 <part name="U$10" library="Saleem_lib" deviceset="2PIN" device=""/>
 <part name="U$11" library="Saleem_lib" deviceset="2PIN" device=""/>
+<part name="U$1" library="Saleem_lib" deviceset="OLED128X64" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -288,6 +343,7 @@
 <instance part="U$9" gate="G$1" x="121.92" y="15.24"/>
 <instance part="U$10" gate="G$1" x="139.7" y="17.78"/>
 <instance part="U$11" gate="G$1" x="154.94" y="17.78"/>
+<instance part="U$1" gate="G$1" x="111.76" y="71.12"/>
 </instances>
 <busses>
 </busses>
