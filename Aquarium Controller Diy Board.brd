@@ -2847,29 +2847,29 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="PWML" library="pinhead" package="1X08_SMT" value="" x="62.23" y="27.131" smashed="yes">
+<element name="PWML" library="pinhead" package="1X08_SMT" value="1X08" x="62.23" y="27.131" smashed="yes">
 <attribute name="VALUE" x="52.07" y="23.956" size="1.27" layer="27"/>
 </element>
-<element name="PWMH" library="pinhead" package="1X08_SMT" value="" x="83.82" y="27.131" smashed="yes">
+<element name="PWMH" library="pinhead" package="1X08_SMT" value="1X08" x="83.82" y="27.131" smashed="yes">
 <attribute name="VALUE" x="73.66" y="23.956" size="1.27" layer="27"/>
 </element>
-<element name="POWER" library="pinhead" package="1X06_SMT" value="" x="77.47" y="75.391" smashed="yes" rot="R180">
+<element name="POWER" library="pinhead" package="1X06_SMT" value="1X06" x="77.47" y="75.391" smashed="yes" rot="R180">
 <attribute name="VALUE" x="85.09" y="78.566" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="ADCL" library="pinhead" package="1X08_SMT" value="" x="57.15" y="75.391" smashed="yes" rot="R180">
+<element name="ADCL" library="pinhead" package="1X08_SMT" value="1X08" x="57.15" y="75.391" smashed="yes" rot="R180">
 <attribute name="VALUE" x="67.31" y="78.566" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="COMMUNICATION" library="pinhead" package="1X08_SMT" value="" x="39.37" y="27.131" smashed="yes">
+<element name="COMMUNICATION" library="pinhead" package="1X08_SMT" value="1X08" x="39.37" y="27.131" smashed="yes">
 <attribute name="VALUE" x="29.21" y="23.956" size="1.27" layer="27"/>
 </element>
-<element name="ADCH" library="pinhead" package="1X08_SMT" value="" x="34.29" y="75.391" smashed="yes" rot="R180">
+<element name="ADCH" library="pinhead" package="1X08_SMT" value="1X08" x="34.29" y="75.391" smashed="yes" rot="R180">
 <attribute name="VALUE" x="44.45" y="78.566" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP1" library="pinhead" package="2X08_SMT" value="" x="21.59" y="39.831" smashed="yes" rot="R270">
+<element name="JP1" library="pinhead" package="2X08_SMT" value="2X08" x="21.59" y="39.831" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.685" y="37.926" size="1.27" layer="49" ratio="10"/>
 <attribute name="VALUE" x="17.145" y="49.991" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP2" library="pinhead" package="2X08_SMT" value="" x="21.59" y="60.151" smashed="yes" rot="R270">
+<element name="JP2" library="pinhead" package="2X08_SMT" value="2X08" x="21.59" y="60.151" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.495" y="59.516" size="1.27" layer="49" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="17.145" y="70.311" size="1.27" layer="27" rot="R270"/>
 </element>
